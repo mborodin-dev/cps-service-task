@@ -43,6 +43,7 @@
 
     &:hover {
       color: lighten($color: #7e7e82, $amount: 20%);
+      border-left-color: $highlightColor;
     }
   }
 }
