@@ -13,4 +13,6 @@
 
 После запуска сервера (`npm start`) для его выключения в терминале нажмите `Ctrl + C`, введите `'Y'` и нажмите `Enter`
 
-## [Ссылка]((https://mborodin-dev.github.io/cps-service-task-web/) "Нажми для просмотра") на Pages (выложен из скомпилированных webpack-ом файлов)
+## Ссылка на Pages (выложен из скомпилированных webpack-ом файлов)
+
+`https://mborodin-dev.github.io/cps-service-task-web/`
