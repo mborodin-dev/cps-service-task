@@ -1,0 +1,42 @@
+@import '../variables';
+
+.social-btns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-top: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+
+  &__item {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    margin-left: 16px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    font-family: 'TT Lakes', 'Verdana', sans-serif;
+    font-size: 0;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #000;
+  }
+}

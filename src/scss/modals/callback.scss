@@ -1,0 +1,120 @@
+@import '../variables';
+
+.callback-modal {
+  position: fixed;
+  top: 0;
+  right: -600px;
+  z-index: 200;
+
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+
+  background-color: #fff;
+
+  transition: right 500ms;
+
+  @media screen and (min-width: 426px) {
+    width: 320px;
+
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px rgba(69, 79, 126, 0.02);
+  }
+
+  @media screen and (min-width: 1120px) {
+    width: 440px;
+    padding-top: 32px;
+  }
+
+  &--open {
+    right: 0;
+  }
+
+  &__close {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+
+    @media screen and (min-width: 1120px) {
+      top: 32px;
+      left: -72px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-left: 12px;
+
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+
+    border-left: 4px solid $highlightColor;
+
+    @media screen and (min-width: 1120px) {
+      padding-left: 30px;
+    }
+  }
+}
+
+.callback-form {
+  margin-left: 16px;
+  margin-right: 16px;
+
+  @media screen and (min-width: 1120px) {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  textarea,
+  input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+
+    font-family: 'TT Lakes', 'Verdana', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #b5b6bc;
+
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+
+    &:focus {
+      outline: none;
+      border-color: $highlightColor;
+    }
+  }
+
+  textarea::placeholder,
+  input::placeholder {
+    font-family: 'TT Lakes', 'Verdana', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #b5b6bc;
+  }
+
+  &__button {
+    margin-left: auto;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ff3e79;
+  }
+}
